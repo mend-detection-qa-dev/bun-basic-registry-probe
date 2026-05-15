@@ -1,0 +1,12 @@
+{
+  "name": "bun-basic-registry-probe",
+  "version": "0.1.0",
+  "description": "Mend SCA detection probe — covers basic-registry, diamond-dependency, transitive-only-dep, lockfile-jsonc-comments, and scoped-packages patterns.",
+  "private": true,
+  "dependencies": {
+    "hono": "^4.12.18",
+    "zod": "^3.25.68",
+    "@types/node": "^22.15.21",
+    "@hono/zod-validator": "^0.8.0"
+  }
+}

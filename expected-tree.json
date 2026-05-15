@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "pm": "bun",
+  "pm_version_tested": "1.2.0",
+  "source_file": "bun.lock",
+  "generated_at": "2026-05-15T00:00:00+00:00",
+  "root": {
+    "name": "bun-basic-registry-probe",
+    "version": "0.1.0",
+    "dependencies": [
+      "@hono/zod-validator",
+      "@types/node",
+      "hono",
+      "zod"
+    ]
+  },
+  "packages": {
+    "@hono/zod-validator": {
+      "version": "0.8.0",
+      "source": "registry",
+      "group": "main",
+      "dependencies": [
+        "hono",
+        "zod"
+      ],
+      "source_detail": {
+        "registry": "https://registry.npmjs.org"
+      }
+    },
+    "@types/node": {
+      "version": "22.15.21",
+      "source": "registry",
+      "group": "main",
+      "dependencies": [
+        "undici-types"
+      ],
+      "source_detail": {
+        "registry": "https://registry.npmjs.org"
+      }
+    },
+    "hono": {
+      "version": "4.12.18",
+      "source": "registry",
+      "group": "main",
+      "dependencies": [],
+      "source_detail": {
+        "registry": "https://registry.npmjs.org"
+      }
+    },
+    "zod": {
+      "version": "3.25.68",
+      "source": "registry",
+      "group": "main",
+      "dependencies": [],
+      "source_detail": {
+        "registry": "https://registry.npmjs.org"
+      }
+    },
+    "undici-types": {
+      "version": "6.21.0",
+      "source": "registry",
+      "group": "main",
+      "dependencies": [],
+      "source_detail": {
+        "registry": "https://registry.npmjs.org"
+      }
+    }
+  },
+  "project_metadata": {
+    "source_file": "bun.lock",
+    "groups": [
+      "main"
+    ]
+  },
+  "warnings": [
+    "Bun is NOT a UA-supported resolver (js-bun is Bucket C in whitesource-config.md). Mend will attempt npm-resolver fallback against bun.lock. JSONC comments and trailing commas may cause parse failures depending on Mend version.",
+    "Diamond: hono@4.12.18 and zod@3.25.68 appear as both direct root deps and peer/transitive deps of @hono/zod-validator. Expected tree encodes a single resolved version for each (deduplication). If Mend emits duplicates, that is a bug.",
+    "undici-types@6.21.0 is transitive-only (reachable only via @types/node). If missing from Mend output, that is a false negative."
+  ]
+}
